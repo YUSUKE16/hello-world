@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8
 
-    - name: Analysing the code with flake
+    - name: Analysing the code with flake8
       run:
         flake8 . > flake8_report.txt || true
 
